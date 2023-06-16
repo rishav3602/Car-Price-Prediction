@@ -1,0 +1,151 @@
+<html>
+
+<body>
+    <form action="{{url_for('predict_datapoint')}}" method="POST">
+        <div class="form-group">
+            <label for="wheelbase">wheelbase:</label>
+            <input type="text" id="wheelbase" name="wheelbase" placeholder="Enter wheelbase value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="carlength"></label>carwidth:</label>
+            <input type="text" id="carlength" name="carlength" placeholder="Enter carlength value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="carwidth">carwidth:</label>
+            <input type="text" id="carwidth" name="carwidth" placeholder="Enter carwidth value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="carheight">Carheight:</label>
+            <input type="text" id="carheight" name="carheight" placeholder="Enter carheight value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="curbweight">Curbweight:</label>
+            <input type="curbweight" id="curbweight" name="curbweight"
+                placeholder="Enter curbwenginesize value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="cylindernumber">cylindernumber:</label>
+            <input type="text" id="cylindernumber" name="cylindernumber"
+                placeholder="Enter cylindernumber value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="enginesize">enginesize:</label>
+            <input type="text" id="enginesize" name="enginesize" placeholder="Enter enginesize value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="boreratio">boreratio:</label>
+            <input type="text" id="boreratio" name="boreratio" placeholder="Enter boreratio value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="stroke">stroke:</label>
+            <input type="text" id="stroke" name="stroke" placeholder="Enter stroke value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="compressionratio">compressionratio:</label>
+            <input type="text" id="compressionratio" name="compressionratio"
+                placeholder="Enter compressionratio value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="horsepower">horsepower:</label>
+            <input type="text" id="horsepower" name="horsepower" placeholder="Enter horsepower value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="peakrpm">peakrpm:</label>
+            <input type="text" id="peakrpm" name="peakrpm" placeholder="Enter peakrpm value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="citympg">citympg:</label>
+            <input type="text" id="citympg" name="citympg" placeholder="Enter citympg value (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="highwaympg">highwaympg:</label>
+            <input type="text" id="highwaympg" name="highwaympg" placeholder="Enter highwaympg value (float)">
+        </div>
+
+
+        Categorical Columns: Index(['fueltype', 'aspiration', 'carbody', 'drivewheel', 'enginetype',
+        'fuelsystem'],
+        dtype='object')
+
+
+        <div class="form-group">
+            <label for="fueltype">fueltype:</label>
+            <select id="fueltype" name="fueltype">
+                <option value="diesel">diesel</option>
+                <option value="gas">gas</option>
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="aspiration">aspiration:</label>
+            <select id="aspiration" name="aspiration">
+                <option value="std">std</option>
+                <option value="E">turbo</option>
+        </div>
+
+        <div class="form-group">
+            <label for="carbody">Carbody:</label>
+            <select id="carbody" name="carbody">
+                <option value="hatchback">hatchback</option>
+                <option value="sedan">sedan</option>
+                <option value="wagon">wagon</option>
+                <option value="convertible">convertible</option>
+                <option value="hardtop">hardtop</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="drivewheel">drivewheel:</label>
+            <select id="drivewheel" name="drivewheel">
+                <option value="fwd">fwd</option>
+                <option value="4wd">4wd</option>
+                <option value="rwd">rwd</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="enginetype">enginetype:</label>
+            <select id="enginetype" name="enginetype">
+                <option value="ohc">ohc</option>
+                <option value="l">l</option>
+                <option value="ohcf">ohcf</option>
+                <option value="dohc">dohc</option>
+                <option value="ohcv">ohcv</option>
+                <option value="rotor">rotor</option>
+                <option value="dohcv">dohcv</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="fuelsystem">fuelsystem:</label>
+            <select id="fuelsystem" name="fuelsystem">
+                <option value="1bbl">1bbl</option>
+                <option value="2bbl">2bbl</option>
+                <option value="4bbl">4bbl</option>
+                <option value="spfi">spfi</option>
+                <option value="mpfi">mpfi</option>
+                <option value="spdi">spdi</option>
+                <option value="mfi">mfi</option>
+                <option value="idi">idi</option>
+            </select>
+        </div>
+        <div style="clear:both;"></div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
